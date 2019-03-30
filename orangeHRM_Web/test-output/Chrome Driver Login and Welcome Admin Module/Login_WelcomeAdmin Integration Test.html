@@ -1,0 +1,279 @@
+<html>
+<head>
+<title>TestNG:  Login_WelcomeAdmin Integration Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login_WelcomeAdmin Integration Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>40/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 25 00:20:16 SGT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>127 seconds (127563 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.orangeHRM.TestNG_About.TestCase01_testAuthenticationSuccessAboutMenuPopUpPresent()'><b>TestCase01_testAuthenticationSuccessAboutMenuPopUpPresent</b><br>Test class: com.orangeHRM.TestNG_About</td>
+<td></td>
+<td>8</td>
+<td>com.orangeHRM.TestNG_About@1e88b3c</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_ChangePassword.TestCase01_testAuthenticationSuccessPageRedirectionChangePassword()'><b>TestCase01_testAuthenticationSuccessPageRedirectionChangePassword</b><br>Test class: com.orangeHRM.TestNG_ChangePassword</td>
+<td></td>
+<td>3</td>
+<td>com.orangeHRM.TestNG_ChangePassword@42d80b78</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_WelcomeAdmin.TestCase01_testAuthenticationSuccessWelcomeAdminLinkPresent()'><b>TestCase01_testAuthenticationSuccessWelcomeAdminLinkPresent</b><br>Test class: com.orangeHRM.TestNG_WelcomeAdmin</td>
+<td></td>
+<td>5</td>
+<td>com.orangeHRM.TestNG_WelcomeAdmin@3bfdc050</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase01_testAuthenticationSuccessWhenProvidingCorrectUsernameAndPassword()'><b>TestCase01_testAuthenticationSuccessWhenProvidingCorrectUsernameAndPassword</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>12</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_WelcomeAdmin.TestCase02_testAuthenticationSuccessAboutMenuPresent()'><b>TestCase02_testAuthenticationSuccessAboutMenuPresent</b><br>Test class: com.orangeHRM.TestNG_WelcomeAdmin</td>
+<td></td>
+<td>3</td>
+<td>com.orangeHRM.TestNG_WelcomeAdmin@3bfdc050</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase02_testAuthenticationSuccessDashboardRedirection()'><b>TestCase02_testAuthenticationSuccessDashboardRedirection</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>5</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_ChangePassword.TestCase02_testAuthenticationSuccessFormLabelsVisible()'><b>TestCase02_testAuthenticationSuccessFormLabelsVisible</b><br>Test class: com.orangeHRM.TestNG_ChangePassword</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_ChangePassword@42d80b78</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_About.TestCase02_testAuthenticationSuccessLabelPresent()'><b>TestCase02_testAuthenticationSuccessLabelPresent</b><br>Test class: com.orangeHRM.TestNG_About</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_About@1e88b3c</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase03_testAuthenticationFailedWhenProvidingIncorrectUsername()'><b>TestCase03_testAuthenticationFailedWhenProvidingIncorrectUsername</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>4</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_WelcomeAdmin.TestCase03_testAuthenticationSuccessChangePasswordMenuPresent()'><b>TestCase03_testAuthenticationSuccessChangePasswordMenuPresent</b><br>Test class: com.orangeHRM.TestNG_WelcomeAdmin</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_WelcomeAdmin@3bfdc050</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_ChangePassword.TestCase03_testAuthenticationSuccessEditCancelButtonsVisibleDefault()'><b>TestCase03_testAuthenticationSuccessEditCancelButtonsVisibleDefault</b><br>Test class: com.orangeHRM.TestNG_ChangePassword</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_ChangePassword@42d80b78</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase04_testAuthenticationFailedWhenProvidingIncorrectPassword()'><b>TestCase04_testAuthenticationFailedWhenProvidingIncorrectPassword</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>7</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_WelcomeAdmin.TestCase04_testAuthenticationSuccessLogoutMenuPresent()'><b>TestCase04_testAuthenticationSuccessLogoutMenuPresent</b><br>Test class: com.orangeHRM.TestNG_WelcomeAdmin</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_WelcomeAdmin@3bfdc050</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase05_testAuthenticationFailedWhenProvidingIncorrectUsernameAndPassword()'><b>TestCase05_testAuthenticationFailedWhenProvidingIncorrectUsernameAndPassword</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>5</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase06_testAuthenticationFailedEmptyUsername()'><b>TestCase06_testAuthenticationFailedEmptyUsername</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>3</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_ChangePassword.TestCase06_testAuthenticationSuccessTexBoxesMaxLength()'><b>TestCase06_testAuthenticationSuccessTexBoxesMaxLength</b><br>Test class: com.orangeHRM.TestNG_ChangePassword</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_ChangePassword@42d80b78</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase07_testAuthenticationFailedEmptyUsernameAndPassword()'><b>TestCase07_testAuthenticationFailedEmptyUsernameAndPassword</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>3</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_ChangePassword.TestCase07_testAuthenticationSuccessTexBoxesMinLength()'><b>TestCase07_testAuthenticationSuccessTexBoxesMinLength</b><br>Test class: com.orangeHRM.TestNG_ChangePassword</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_ChangePassword@42d80b78</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase08_testAuthenticationFailedEmptyPassword()'><b>TestCase08_testAuthenticationFailedEmptyPassword</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>4</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_ChangePassword.TestCase08_testAuthenticationSuccessRedirectionOrangeHRMLink()'><b>TestCase08_testAuthenticationSuccessRedirectionOrangeHRMLink</b><br>Test class: com.orangeHRM.TestNG_ChangePassword</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_ChangePassword@42d80b78</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_ChangePassword.TestCase09_testAuthenticationSuccessFooterContent()'><b>TestCase09_testAuthenticationSuccessFooterContent</b><br>Test class: com.orangeHRM.TestNG_ChangePassword</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_ChangePassword@42d80b78</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_ChangePassword.TestCase10_testAuthenticationSuccessFormContent()'><b>TestCase10_testAuthenticationSuccessFormContent</b><br>Test class: com.orangeHRM.TestNG_ChangePassword</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_ChangePassword@42d80b78</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase10_testAuthenticationSuccessLinkedInSocialsRedirection()'><b>TestCase10_testAuthenticationSuccessLinkedInSocialsRedirection</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>3</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase11_testAuthenticationSuccessFacebookSocialsRedirection()'><b>TestCase11_testAuthenticationSuccessFacebookSocialsRedirection</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>5</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase12_testAuthenticationSuccessTwitterSocialsRedirection()'><b>TestCase12_testAuthenticationSuccessTwitterSocialsRedirection</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>2</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase13_testAuthenticationSuccessYoutubeSocialsRedirection()'><b>TestCase13_testAuthenticationSuccessYoutubeSocialsRedirection</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>5</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase14_testAuthenticationSuccessOpenIdVisible()'><b>TestCase14_testAuthenticationSuccessOpenIdVisible</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase15_testAuthenticationSuccessLoginButtonsVisible()'><b>TestCase15_testAuthenticationSuccessLoginButtonsVisible</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase16_testAuthenticationSuccessLoginButtonsEnabled()'><b>TestCase16_testAuthenticationSuccessLoginButtonsEnabled</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase17_testAuthenticationSuccessProviderdropdown()'><b>TestCase17_testAuthenticationSuccessProviderdropdown</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase18_testAuthenticationSuccessPlacholders()'><b>TestCase18_testAuthenticationSuccessPlacholders</b><br>Test class: com.orangeHRM.TestNG_login</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase19_testAuthenticationSuccessLoginTextboxesInputs()'><b>TestCase19_testAuthenticationSuccessLoginTextboxesInputs</b><br>Test class: com.orangeHRM.TestNG_login<br>Parameters: abc, abc</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase19_testAuthenticationSuccessLoginTextboxesInputs()'><b>TestCase19_testAuthenticationSuccessLoginTextboxesInputs</b><br>Test class: com.orangeHRM.TestNG_login<br>Parameters: 123, 123</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase19_testAuthenticationSuccessLoginTextboxesInputs()'><b>TestCase19_testAuthenticationSuccessLoginTextboxesInputs</b><br>Test class: com.orangeHRM.TestNG_login<br>Parameters: ABC, ABC</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase19_testAuthenticationSuccessLoginTextboxesInputs()'><b>TestCase19_testAuthenticationSuccessLoginTextboxesInputs</b><br>Test class: com.orangeHRM.TestNG_login<br>Parameters: abc123, ABc123</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase19_testAuthenticationSuccessLoginTextboxesInputs()'><b>TestCase19_testAuthenticationSuccessLoginTextboxesInputs</b><br>Test class: com.orangeHRM.TestNG_login<br>Parameters: !@#$%^&*()_+, !@#$%^&*()_+</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase19_testAuthenticationSuccessLoginTextboxesInputs()'><b>TestCase19_testAuthenticationSuccessLoginTextboxesInputs</b><br>Test class: com.orangeHRM.TestNG_login<br>Parameters: ~~~~  #$%, ~~~~  #$%</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase19_testAuthenticationSuccessLoginTextboxesInputs()'><b>TestCase19_testAuthenticationSuccessLoginTextboxesInputs</b><br>Test class: com.orangeHRM.TestNG_login<br>Parameters: aBC 12~!@#$, aBC 12~!@#$</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase19_testAuthenticationSuccessLoginTextboxesInputs()'><b>TestCase19_testAuthenticationSuccessLoginTextboxesInputs</b><br>Test class: com.orangeHRM.TestNG_login<br>Parameters: ,./<>?234eBFG []\, ,./<>?234eBFG []\</td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+<tr>
+<td title='com.orangeHRM.TestNG_login.TestCase19_testAuthenticationSuccessLoginTextboxesInputs()'><b>TestCase19_testAuthenticationSuccessLoginTextboxesInputs</b><br>Test class: com.orangeHRM.TestNG_login<br>Parameters: <script> "Hello"<\script> , <script> "Hello"<\script> </td>
+<td></td>
+<td>0</td>
+<td>com.orangeHRM.TestNG_login@77caeb3e</td></tr>
+</table><p>
+</body>
+</html>

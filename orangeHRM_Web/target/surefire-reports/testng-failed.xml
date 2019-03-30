@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.orangeHRM.TestNG_login_PageElements">
+        <methods>
+          <include name="TestCase07_testAuthenticationFailedEmptyUsernameAndPassword"/>
+          <include name="TestCase04_testAuthenticationFailedWhenProvidingIncorrectPassword"/>
+          <include name="TestCase11_testAuthenticationSuccessFacebookSocialsRedirection"/>
+          <include name="TestCase10_testAuthenticationSuccessLinkedInSocialsRedirection"/>
+          <include name="TestCase05_testAuthenticationFailedWhenProvidingIncorrectUsernameAndPassword"/>
+          <include name="TearDown"/>
+          <include name="TestCase15_testAuthenticationSuccessLoginButtonsVisible"/>
+          <include name="TestCase12_testAuthenticationSuccessTwitterSocialsRedirection"/>
+          <include name="TestCase19_testAuthenticationSuccessLoginTextboxesInputs" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
+          <include name="TestCase13_testAuthenticationSuccessYoutubeSocialsRedirection"/>
+          <include name="TestCase16_testAuthenticationSuccessLoginButtonsEnabled"/>
+          <include name="TestCase02_testAuthenticationSuccessDashboardRedirection"/>
+          <include name="TestCase18_testAuthenticationSuccessPlacholders"/>
+          <include name="TestCase03_testAuthenticationFailedWhenProvidingIncorrectUsername"/>
+          <include name="TestCase01_testAuthenticationSuccessWhenProvidingCorrectUsernameAndPassword"/>
+          <include name="TestCase06_testAuthenticationFailedEmptyUsername"/>
+          <include name="TestCase14_testAuthenticationSuccessOpenIdVisible"/>
+          <include name="setup"/>
+          <include name="TestCase17_testAuthenticationSuccessProviderdropdown"/>
+          <include name="TestCase08_testAuthenticationFailedEmptyPassword"/>
+        </methods>
+      </class> <!-- com.orangeHRM.TestNG_login_PageElements -->
+      <class name="com.orangeHRM.TestNG_WelcomeAdmin">
+        <methods>
+          <include name="TestCase01_testAuthenticationSuccessWelcomeAdminLinkPresent"/>
+          <include name="TestCase03_testAuthenticationSuccessChangePasswordMenuPresent"/>
+          <include name="TearDown"/>
+          <include name="setup"/>
+          <include name="TestCase02_testAuthenticationSuccessAboutMenuPresent"/>
+          <include name="TestCase04_testAuthenticationSuccessLogoutMenuPresent"/>
+        </methods>
+      </class> <!-- com.orangeHRM.TestNG_WelcomeAdmin -->
+      <class name="com.orangeHRM.TestNG_About">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TestCase02_testAuthenticationSuccessLabelPresent"/>
+          <include name="setup"/>
+          <include name="TestCase01_testAuthenticationSuccessAboutMenuPopUpPresent"/>
+        </methods>
+      </class> <!-- com.orangeHRM.TestNG_About -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
